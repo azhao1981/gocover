@@ -79,7 +79,9 @@ func OrderCoverWithPyUnlessEnd(
 		Arr2: arr2Py,
 	}
 	coverRate.Count()
-	rate = coverRate.Arr2Rate()
+	rate2 := coverRate.Arr2Rate()
+	rate1 := coverRate.Arr1Rate()
+	rate = rate1 + rate2
 	if len(coverRate.HitArr1) == 0 {
 		return rate, "", sentence1
 	}
