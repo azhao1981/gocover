@@ -7,5 +7,5 @@
 ## push
 
 ```bash
-go list -m  github.com/azhao1981/go-cover@v1.0.0
+go list -m  github.com/azhao1981/gocover@v1.0.1
 ```

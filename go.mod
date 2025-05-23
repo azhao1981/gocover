@@ -4,7 +4,6 @@ go 1.22.5
 
 require (
 	github.com/go-ego/gpy v0.42.1
-	github.com/magiconair/properties v1.8.10
 	github.com/stretchr/testify v1.10.0
 )
 

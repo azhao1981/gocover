@@ -1,4 +1,4 @@
-package cover
+package gocover
 
 import (
 	"strings"

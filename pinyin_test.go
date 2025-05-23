@@ -1,11 +1,11 @@
-package cover
+package gocover
 
 import (
 	"fmt"
 	"testing"
 
 	"github.com/go-ego/gpy"
-	"github.com/magiconair/properties/assert"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestOrderCoverWithPYUnlessEnd(t *testing.T) {
