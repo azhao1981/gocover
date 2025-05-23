@@ -15,6 +15,15 @@ type CoverRate struct {
 
 	LastArr1HitIndex int // 最后一个命中开始下标
 	LastArr2HitIndex int // 最后一个命中开始下标
+
+	RateWith float64 // 权重1
+}
+
+func (c *CoverRate) ArrRate() (rate float64) {
+	rate1 := c.Arr1Rate()
+	rate2 := c.Arr2Rate()
+	rate = rate1*c.RateWith + rate2*(1-c.RateWith)
+	return rate
 }
 
 func (c *CoverRate) Arr2Rate() (rate float64) {

@@ -41,11 +41,12 @@ func OrderCoverWithUnlessEnd(
 		return 0, "", sentence1
 	}
 	coverRate := &CoverRate{
-		Arr1: arr1,
-		Arr2: arr2,
+		Arr1:     arr1,
+		Arr2:     arr2,
+		RateWith: 0.1,
 	}
 	coverRate.Count()
-	rate = coverRate.Arr2Rate()
+	rate = coverRate.ArrRate()
 	if len(coverRate.HitArr1) == 0 {
 		return rate, "", sentence1
 	}
@@ -61,6 +62,12 @@ func OrderCoverWithUnlessEnd(
 func OrderCoverWithPyUnlessEnd(
 	sentence1 string, sentence2 string, segTag string, minLen int,
 ) (rate float64, sen1 string, sen2 string) {
+	return OrderCoverWithPyUnlessEndWithWight(sentence1, sentence2, segTag, minLen, 0.5)
+}
+
+func OrderCoverWithPyUnlessEndWithWight(
+	sentence1 string, sentence2 string, segTag string, minLen int, weight float64,
+) (rate float64, sen1 string, sen2 string) {
 	arr1 := strings.Split(sentence1, segTag)
 	arr2 := strings.Split(sentence2, segTag)
 	if len(arr1) < minLen || len(arr2) < minLen {
@@ -75,13 +82,12 @@ func OrderCoverWithPyUnlessEnd(
 		arr2Py[i] = HasToPY(v)
 	}
 	coverRate := &CoverRate{
-		Arr1: arr1Py,
-		Arr2: arr2Py,
+		Arr1:     arr1Py,
+		Arr2:     arr2Py,
+		RateWith: weight,
 	}
 	coverRate.Count()
-	rate2 := coverRate.Arr2Rate()
-	rate1 := coverRate.Arr1Rate()
-	rate = rate1 + rate2
+	rate = coverRate.ArrRate()
 	if len(coverRate.HitArr1) == 0 {
 		return rate, "", sentence1
 	}
