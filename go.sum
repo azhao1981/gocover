@@ -1,0 +1,10 @@
+github.com/go-ego/gpy v0.42.1 h1:P/doarxZi2J5qwNzLIM0ESd3VXLXMpdhwO/GNontLdE=
+github.com/go-ego/gpy v0.42.1/go.mod h1:eBtY3/uCDqBFog4ES9L00xytTpXar/0mGf45Rb7zcgg=
+github.com/go-ego/gse v0.69.15 h1:QprXRGKim8fI2B38ItT4YwuY9/37gwUAw37TnA3exa0=
+github.com/go-ego/gse v0.69.15/go.mod h1:M9Xv8cEW7Of27BbE4p0iI3arqQHCYcm5N16/2b3pPPk=
+github.com/magiconair/properties v1.8.10 h1:s31yESBquKXCV9a/ScB3ESkOjUYYv+X0rg8SYxI99mE=
+github.com/magiconair/properties v1.8.10/go.mod h1:Dhd985XPs7jluiymwWYZ0G4Z61jb3vdS329zhj2hYo0=
+github.com/vcaesar/cedar v0.20.0 h1:VtBy/twzVjXiTo1Ij3fQRyDQRzvzDa9sKacpbwSJyps=
+github.com/vcaesar/cedar v0.20.0/go.mod h1:iMDweyuW76RvSrCkQeZeQk4iCbshiPzcCvcGCtpM7iI=
+github.com/vcaesar/tt v0.20.0 h1:9t2Ycb9RNHcP0WgQgIaRKJBB+FrRdejuaL6uWIHuoBA=
+github.com/vcaesar/tt v0.20.0/go.mod h1:GHPxQYhn+7OgKakRusH7KJ0M5MhywoeLb8Fcffs/Gtg=
